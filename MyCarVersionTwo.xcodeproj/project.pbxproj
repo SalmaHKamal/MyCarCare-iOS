@@ -13,6 +13,9 @@
 		162856B720B007FE009124CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 162856B620B007FE009124CC /* Assets.xcassets */; };
 		162856BA20B007FE009124CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 162856B820B007FE009124CC /* LaunchScreen.storyboard */; };
 		16498C3C20B363A4002B05AA /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16498C3B20B363A4002B05AA /* CardViewController.swift */; };
+		1650EDF820B42E5100C830FA /* CarTracking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1650EDF720B42E5100C830FA /* CarTracking.storyboard */; };
+		1650EDFA20B42E9600C830FA /* OBD.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1650EDF920B42E9600C830FA /* OBD.storyboard */; };
+		1650EDFC20B42EBA00C830FA /* NewCar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1650EDFB20B42EBA00C830FA /* NewCar.storyboard */; };
 		16653B2920B0098500765363 /* CartTotalPriceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16653B2120B0098500765363 /* CartTotalPriceCell.swift */; };
 		16653B2A20B0098500765363 /* ProductInCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16653B2220B0098500765363 /* ProductInCart.swift */; };
 		16653B2C20B0098500765363 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16653B2420B0098500765363 /* CartViewController.swift */; };
@@ -35,6 +38,9 @@
 		162856B920B007FE009124CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		162856BB20B007FE009124CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16498C3B20B363A4002B05AA /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		1650EDF720B42E5100C830FA /* CarTracking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CarTracking.storyboard; sourceTree = "<group>"; };
+		1650EDF920B42E9600C830FA /* OBD.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OBD.storyboard; sourceTree = "<group>"; };
+		1650EDFB20B42EBA00C830FA /* NewCar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewCar.storyboard; sourceTree = "<group>"; };
 		16653B2120B0098500765363 /* CartTotalPriceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartTotalPriceCell.swift; sourceTree = "<group>"; };
 		16653B2220B0098500765363 /* ProductInCart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductInCart.swift; sourceTree = "<group>"; };
 		16653B2420B0098500765363 /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +120,26 @@
 			path = "MyCar Files";
 			sourceTree = "<group>";
 		};
+		1650EDFD20B42F2900C830FA /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1650EDF720B42E5100C830FA /* CarTracking.storyboard */,
+				1650EDF920B42E9600C830FA /* OBD.storyboard */,
+				1650EDFB20B42EBA00C830FA /* NewCar.storyboard */,
+				162856B020B007FE009124CC /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		1650EDFE20B42F4500C830FA /* NIB */ = {
+			isa = PBXGroup;
+			children = (
+				168E90DA20B29E3F003CA24C /* CardViewController.xib */,
+				16498C3B20B363A4002B05AA /* CardViewController.swift */,
+			);
+			path = NIB;
+			sourceTree = "<group>";
+		};
 		16653B2020B0096F00765363 /* Car Tracking */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,9 +167,8 @@
 		168E90D820B29DB0003CA24C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				162856B020B007FE009124CC /* Main.storyboard */,
-				168E90DA20B29E3F003CA24C /* CardViewController.xib */,
-				16498C3B20B363A4002B05AA /* CardViewController.swift */,
+				1650EDFE20B42F4500C830FA /* NIB */,
+				1650EDFD20B42F2900C830FA /* Storyboards */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -209,8 +234,11 @@
 			files = (
 				162856BA20B007FE009124CC /* LaunchScreen.storyboard in Resources */,
 				162856B720B007FE009124CC /* Assets.xcassets in Resources */,
+				1650EDFA20B42E9600C830FA /* OBD.storyboard in Resources */,
 				168E90DC20B29E3F003CA24C /* CardViewController.xib in Resources */,
 				162856B220B007FE009124CC /* Main.storyboard in Resources */,
+				1650EDFC20B42EBA00C830FA /* NewCar.storyboard in Resources */,
+				1650EDF820B42E5100C830FA /* CarTracking.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
