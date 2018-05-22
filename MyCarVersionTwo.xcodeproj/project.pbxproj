@@ -16,6 +16,7 @@
 		1650EDF820B42E5100C830FA /* CarTracking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1650EDF720B42E5100C830FA /* CarTracking.storyboard */; };
 		1650EDFA20B42E9600C830FA /* OBD.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1650EDF920B42E9600C830FA /* OBD.storyboard */; };
 		1650EDFC20B42EBA00C830FA /* NewCar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1650EDFB20B42EBA00C830FA /* NewCar.storyboard */; };
+		1650EE0020B4306700C830FA /* testFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1650EDFF20B4306700C830FA /* testFile.swift */; };
 		16653B2920B0098500765363 /* CartTotalPriceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16653B2120B0098500765363 /* CartTotalPriceCell.swift */; };
 		16653B2A20B0098500765363 /* ProductInCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16653B2220B0098500765363 /* ProductInCart.swift */; };
 		16653B2C20B0098500765363 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16653B2420B0098500765363 /* CartViewController.swift */; };
@@ -41,6 +42,7 @@
 		1650EDF720B42E5100C830FA /* CarTracking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CarTracking.storyboard; sourceTree = "<group>"; };
 		1650EDF920B42E9600C830FA /* OBD.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OBD.storyboard; sourceTree = "<group>"; };
 		1650EDFB20B42EBA00C830FA /* NewCar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewCar.storyboard; sourceTree = "<group>"; };
+		1650EDFF20B4306700C830FA /* testFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testFile.swift; sourceTree = "<group>"; };
 		16653B2120B0098500765363 /* CartTotalPriceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartTotalPriceCell.swift; sourceTree = "<group>"; };
 		16653B2220B0098500765363 /* ProductInCart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductInCart.swift; sourceTree = "<group>"; };
 		16653B2420B0098500765363 /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		16289D8020B4162200970D11 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1650EDFF20B4306700C830FA /* testFile.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				16653B3D20B169F700765363 /* CarTItemDetailsViewController.swift in Sources */,
 				16653B3B20B169D900765363 /* AddNewCTItemViewController.swift in Sources */,
 				162856B520B007FE009124CC /* MyCarVersionTwo.xcdatamodeld in Sources */,
+				1650EE0020B4306700C830FA /* testFile.swift in Sources */,
 				16653B4020B179BA00765363 /* CarListViewController.swift in Sources */,
 				16653B3420B0118500765363 /* CarTrackingViewController.swift in Sources */,
 			);
