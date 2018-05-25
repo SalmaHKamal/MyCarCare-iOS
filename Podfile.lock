@@ -1,12 +1,18 @@
 PODS:
+  - DropDown (2.3.2)
+  - FaceAware (1.2.0)
   - RAMPaperSwitch (2.1.0)
 
 DEPENDENCIES:
+  - DropDown
+  - FaceAware
   - RAMPaperSwitch
 
 SPEC CHECKSUMS:
+  DropDown: 7f87abecc28f9b4edad810fe1211c5c018c257e5
+  FaceAware: 421436f9d16aacdb26ffcf8e5a39a1dd68630395
   RAMPaperSwitch: ef08af0400a040c9850e09253280deb77510becb
 
-PODFILE CHECKSUM: 4d3ea763938e09ca0b9d3052fc13b82e03db5ba1
+PODFILE CHECKSUM: e3376ee3ed35762887b3a2829b6a764e223880de
 
 COCOAPODS: 1.4.0

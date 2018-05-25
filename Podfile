@@ -6,5 +6,7 @@ target 'MyCarVersionTwo' do
   use_frameworks!
 
   pod 'RAMPaperSwitch'
+  pod 'DropDown'
+  pod 'FaceAware'
 
 end

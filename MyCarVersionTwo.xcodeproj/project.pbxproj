@@ -28,6 +28,7 @@
 		16653B3D20B169F700765363 /* CarTItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16653B3C20B169F700765363 /* CarTItemDetailsViewController.swift */; };
 		16653B4020B179BA00765363 /* CarListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16653B3F20B179BA00765363 /* CarListViewController.swift */; };
 		168E90DC20B29E3F003CA24C /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 168E90DA20B29E3F003CA24C /* CardViewController.xib */; };
+		16D5302F20B8637B00BCA4BD /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5302E20B8637B00BCA4BD /* UserProfileController.swift */; };
 		FE82C35C046FB879A2FA4795 /* Pods_MyCarVersionTwo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D78B1A43E028116C274282D0 /* Pods_MyCarVersionTwo.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		16653B3C20B169F700765363 /* CarTItemDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTItemDetailsViewController.swift; sourceTree = "<group>"; };
 		16653B3F20B179BA00765363 /* CarListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewController.swift; sourceTree = "<group>"; };
 		168E90DA20B29E3F003CA24C /* CardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardViewController.xib; sourceTree = "<group>"; };
+		16D5302E20B8637B00BCA4BD /* UserProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
 		4E3C5372C003FD0AF90BF475 /* Pods-MyCarVersionTwo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCarVersionTwo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyCarVersionTwo/Pods-MyCarVersionTwo.release.xcconfig"; sourceTree = "<group>"; };
 		D78B1A43E028116C274282D0 /* Pods_MyCarVersionTwo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCarVersionTwo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E01D5C2731F66608A8B81A9B /* Pods-MyCarVersionTwo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCarVersionTwo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyCarVersionTwo/Pods-MyCarVersionTwo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -93,7 +95,11 @@
 		162856AB20B007FD009124CC /* MyCarVersionTwo */ = {
 			isa = PBXGroup;
 			children = (
-				16289D8220B416F200970D11 /* MyCar Files */,
+				162856AC20B007FD009124CC /* AppDelegate.swift */,
+				162856B620B007FE009124CC /* Assets.xcassets */,
+				162856B820B007FE009124CC /* LaunchScreen.storyboard */,
+				162856BB20B007FE009124CC /* Info.plist */,
+				162856B320B007FE009124CC /* MyCarVersionTwo.xcdatamodeld */,
 				16289D8120B4162E00970D11 /* Controller */,
 				16289D8020B4162200970D11 /* Model */,
 				168E90D820B29DB0003CA24C /* View */,
@@ -112,22 +118,11 @@
 		16289D8120B4162E00970D11 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				16D5302D20B8632900BCA4BD /* User */,
 				16653B2020B0096F00765363 /* Car Tracking */,
 				16653B3E20B177B600765363 /* addCar */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		16289D8220B416F200970D11 /* MyCar Files */ = {
-			isa = PBXGroup;
-			children = (
-				162856AC20B007FD009124CC /* AppDelegate.swift */,
-				162856B620B007FE009124CC /* Assets.xcassets */,
-				162856B820B007FE009124CC /* LaunchScreen.storyboard */,
-				162856BB20B007FE009124CC /* Info.plist */,
-				162856B320B007FE009124CC /* MyCarVersionTwo.xcdatamodeld */,
-			);
-			path = "MyCar Files";
 			sourceTree = "<group>";
 		};
 		1650EDFD20B42F2900C830FA /* Storyboards */ = {
@@ -181,6 +176,14 @@
 				1650EDFD20B42F2900C830FA /* Storyboards */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		16D5302D20B8632900BCA4BD /* User */ = {
+			isa = PBXGroup;
+			children = (
+				16D5302E20B8637B00BCA4BD /* UserProfileController.swift */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 		A169512708E47D30F2C4D898 /* Frameworks */ = {
@@ -315,10 +318,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MyCarVersionTwo/Pods-MyCarVersionTwo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
+				"${BUILT_PRODUCTS_DIR}/FaceAware/FaceAware.framework",
 				"${BUILT_PRODUCTS_DIR}/RAMPaperSwitch/RAMPaperSwitch.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FaceAware.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMPaperSwitch.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +348,7 @@
 				16653B2D20B0098500765363 /* cardViewDesign.swift in Sources */,
 				16653B3620B0155800765363 /* CarTrackingCell.swift in Sources */,
 				16498C3C20B363A4002B05AA /* CardViewController.swift in Sources */,
+				16D5302F20B8637B00BCA4BD /* UserProfileController.swift in Sources */,
 				16653B3D20B169F700765363 /* CarTItemDetailsViewController.swift in Sources */,
 				16653B3B20B169D900765363 /* AddNewCTItemViewController.swift in Sources */,
 				162856B520B007FE009124CC /* MyCarVersionTwo.xcdatamodeld in Sources */,
