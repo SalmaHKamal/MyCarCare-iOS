@@ -12,43 +12,53 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardViewController" customModule="MyCarVersionTwo" customModuleProvider="target">
             <connections>
-                <outlet property="view" destination="i5M-Pr-FkT" id="jsr-Ur-P9e"/>
+                <outlet property="carImageView" destination="n0h-3L-ba1" id="72B-qx-iUx"/>
+                <outlet property="carNameLabel" destination="BoD-w0-q2W" id="g8G-5B-9jH"/>
+                <outlet property="contentView" destination="YZg-aP-A3d" id="GI1-oV-cAo"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="379" height="86"/>
+            <rect key="frame" x="0.0" y="0.0" width="351" height="190"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YZg-aP-A3d" customClass="cardViewDesign" customModule="MyCarVersionTwo" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="0.0" width="379" height="86"/>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YZg-aP-A3d">
+                    <rect key="frame" x="0.0" y="0.0" width="351" height="190"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOf-Pk-8IR">
-                            <rect key="frame" x="34" y="33" width="42" height="21"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car_image" translatesAutoresizingMaskIntoConstraints="NO" id="n0h-3L-ba1">
+                            <rect key="frame" x="0.0" y="0.0" width="351" height="190"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ezn-qe-h3o">
+                            <rect key="frame" x="0.0" y="143.5" width="351" height="46.5"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="qgW-mj-mib">
+                                <rect key="frame" x="0.0" y="0.0" width="351" height="46.5"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Car Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BoD-w0-q2W">
+                                        <rect key="frame" x="26" y="13" width="77" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </view>
+                            <blurEffect style="light"/>
+                        </visualEffectView>
                     </subviews>
-                    <color key="backgroundColor" red="1" green="0.15530643882853068" blue="0.56819137727881275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <constraints>
-                        <constraint firstItem="bOf-Pk-8IR" firstAttribute="centerY" secondItem="YZg-aP-A3d" secondAttribute="centerY" id="bof-Js-0l4"/>
-                        <constraint firstItem="bOf-Pk-8IR" firstAttribute="top" secondItem="YZg-aP-A3d" secondAttribute="top" constant="33" id="dmH-Le-JoZ"/>
-                        <constraint firstItem="bOf-Pk-8IR" firstAttribute="leading" secondItem="YZg-aP-A3d" secondAttribute="leading" constant="34" id="hFa-00-6eR"/>
-                        <constraint firstAttribute="bottom" secondItem="bOf-Pk-8IR" secondAttribute="bottom" constant="32" id="pYs-mQ-NqB"/>
-                    </constraints>
+                    <color key="backgroundColor" red="1" green="0.99751604007065564" blue="0.98901998442228634" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <constraints>
-                <constraint firstItem="YZg-aP-A3d" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1bV-KR-b2g"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YZg-aP-A3d" secondAttribute="trailing" id="ANO-E4-NnR"/>
-                <constraint firstItem="YZg-aP-A3d" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ZOL-PA-JKt"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="YZg-aP-A3d" secondAttribute="bottom" id="qxa-Vb-vhZ"/>
-            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="28.5" y="-19"/>
+            <point key="canvasLocation" x="33.5" y="-34"/>
         </view>
     </objects>
+    <resources>
+        <image name="car_image" width="1200" height="900"/>
+    </resources>
 </document>

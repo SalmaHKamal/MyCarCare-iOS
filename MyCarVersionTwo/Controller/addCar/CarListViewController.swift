@@ -7,21 +7,47 @@
 //
 
 import UIKit
+import Floaty
 
-class CarListViewController: UIViewController {
+class CarListViewController: UIViewController , UITableViewDelegate , UITableViewDataSource{
 
-    @IBOutlet weak var carImage: UIImageView!
-    //var choosedImageName : String = ""
+
+    //outlets
+    @IBOutlet weak var carListTable: UITableView!
+    
+    
+    
+    //variables
+    var listOfCars = ["Nissan" , "Toyota" , "BMW"]
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let subView : CardViewController = CardViewController(frame: CGRect(x:100,y:100,width:379,height:86))
-        self.view.addSubview(subView)
+        carListTable.delegate = self
+        carListTable.dataSource = self
         
-//        let imageClick = UITapGestureRecognizer()
-//        imageClick.addTarget(self, action: #selector(browseCarImage))
-        // Do any additional setup after loading the view.
+        //navigation title
+        self.navigationItem.title = "Car List"
+        
+        //floating button
+        addFloatingBtn()
+    }
+    
+    func addFloatingBtn(){
+        
+        let floaty = Floaty()
+        floaty.buttonColor = UIColor.brown
+        floaty.addItem(title: "Hello", handler: {item in
+            let alert = UIAlertController(title: "Hey", message: "I'm hungry...", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Me too", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            //fab.close()
+            
+        })
+        //floaty.addItem(title: "Hello")
+        self.view.addSubview(floaty)
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,21 +55,30 @@ class CarListViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @objc func browseCarImage(){
-    
-    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
     
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return listOfCars.count
     }
-    */
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let Cell = carListTable.dequeueReusableCell(withIdentifier: "singleCarCell", for: indexPath)
+        
+    
+        
+        // get subView
+        let subView = CardViewController.init(frame: CGRect(x:0 , y:0 , width: 351 , height : 200))
+        subView.carNameLabel.text = listOfCars[indexPath.row]
+        Cell.contentView.addSubview(subView)
+        
+        return Cell
+    }
+    
+    
+    
 
 }

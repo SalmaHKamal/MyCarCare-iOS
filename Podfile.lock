@@ -1,0 +1,18 @@
+PODS:
+  - DropDown (2.3.1)
+  - Floaty (3.0.1)
+  - TextFieldEffects (1.4.0)
+
+DEPENDENCIES:
+  - DropDown
+  - Floaty (~> 3.0.0)
+  - TextFieldEffects
+
+SPEC CHECKSUMS:
+  DropDown: 20499c7b2731b0d21609af924e47c7677a2be50d
+  Floaty: bb7a353deee9ddcc14c584ca9c538efdc19669f2
+  TextFieldEffects: 4ee41b5216e674d55fb6ac25107bf1af7629176f
+
+PODFILE CHECKSUM: 914b9679a094c189a7c9bab6f56efb3d0643ecfb
+
+COCOAPODS: 1.4.0

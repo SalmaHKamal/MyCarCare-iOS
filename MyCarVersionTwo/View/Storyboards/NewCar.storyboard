@@ -1,7 +1,165 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LvE-4N-D9a">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--List of Cars-->
+        <scene sceneID="88M-8B-wv9">
+            <objects>
+                <viewController id="Yik-aG-bvk" userLabel="List of Cars" customClass="CarListViewController" customModule="MyCarVersionTwo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UrQ-4X-2T9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="190" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hkW-tZ-kxf">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="singleCarCell" rowHeight="189" id="hET-5K-TvJ">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="189"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hET-5K-TvJ" id="HAi-DE-ahp" customClass="CardViewController" customModule="MyCarVersionTwo" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="188.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bng-Qt-6T8">
+                                                    <rect key="frame" x="15" y="11" width="345" height="167"/>
+                                                    <color key="backgroundColor" red="0.99026234290136961" green="1" blue="0.9864433847919275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bng-Qt-6T8" firstAttribute="leading" secondItem="HAi-DE-ahp" secondAttribute="leadingMargin" id="Ml4-d7-lCG"/>
+                                                <constraint firstItem="bng-Qt-6T8" firstAttribute="trailing" secondItem="HAi-DE-ahp" secondAttribute="trailingMargin" id="b3K-y4-Alk"/>
+                                                <constraint firstItem="bng-Qt-6T8" firstAttribute="bottom" secondItem="HAi-DE-ahp" secondAttribute="bottomMargin" id="cBs-2B-iRv"/>
+                                                <constraint firstItem="bng-Qt-6T8" firstAttribute="top" secondItem="HAi-DE-ahp" secondAttribute="topMargin" id="cIW-wi-dLG"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Kz7-dg-7B2" kind="show" id="x9V-rp-bF4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4WY-VC-32O" firstAttribute="trailing" secondItem="hkW-tZ-kxf" secondAttribute="trailing" id="MqS-9J-j2A"/>
+                            <constraint firstItem="hkW-tZ-kxf" firstAttribute="leading" secondItem="4WY-VC-32O" secondAttribute="leading" id="QT4-I5-2V0"/>
+                            <constraint firstItem="hkW-tZ-kxf" firstAttribute="top" secondItem="4WY-VC-32O" secondAttribute="top" id="TOM-H0-K2v"/>
+                            <constraint firstItem="4WY-VC-32O" firstAttribute="bottom" secondItem="hkW-tZ-kxf" secondAttribute="bottom" id="jdE-Y2-UqK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4WY-VC-32O"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Efg-Cf-1m4"/>
+                    <connections>
+                        <outlet property="carListTable" destination="hkW-tZ-kxf" id="XVT-Lq-va3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EIO-JR-jem" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1044" y="14.842578710644679"/>
+        </scene>
+        <!--Single Car Data-->
+        <scene sceneID="w5s-Pl-pI0">
+            <objects>
+                <viewController title="Single Car Data" id="Kz7-dg-7B2" customClass="SingleCarDataVC" customModule="MyCarVersionTwo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FgM-b3-hhh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mch-6c-ECU">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nJY-gJ-ONO">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Car Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iES-V2-bMT" customClass="AkiraTextField" customModule="TextFieldEffects">
+                                                <rect key="frame" x="8" y="282" width="359" height="51"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                        <color key="value" red="0.7375352288" green="0.7375352288" blue="0.7375352288" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.69028616561654421" green="0.71641868368700268" blue="0.4484308786324892" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="nJY-gJ-ONO" firstAttribute="leading" secondItem="mch-6c-ECU" secondAttribute="leading" id="CS1-DJ-0F2"/>
+                                    <constraint firstAttribute="trailing" secondItem="nJY-gJ-ONO" secondAttribute="trailing" id="DKN-Cf-eok"/>
+                                    <constraint firstAttribute="bottom" secondItem="nJY-gJ-ONO" secondAttribute="bottom" id="DRz-YB-ylz"/>
+                                    <constraint firstItem="nJY-gJ-ONO" firstAttribute="top" secondItem="mch-6c-ECU" secondAttribute="top" id="HuK-W4-Vkm"/>
+                                    <constraint firstItem="nJY-gJ-ONO" firstAttribute="height" secondItem="mch-6c-ECU" secondAttribute="height" id="WZx-JI-vCx"/>
+                                    <constraint firstItem="nJY-gJ-ONO" firstAttribute="width" secondItem="mch-6c-ECU" secondAttribute="width" id="qR9-qW-nHF"/>
+                                </constraints>
+                            </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car_image" translatesAutoresizingMaskIntoConstraints="NO" id="Lsq-mc-u9W">
+                                <rect key="frame" x="0.0" y="64" width="375" height="238"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Lsq-mc-u9W" secondAttribute="height" multiplier="375:238" id="k4P-15-7lp"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mch-6c-ECU" firstAttribute="top" secondItem="IEz-Wn-3pz" secondAttribute="top" id="1FV-UG-zUX"/>
+                            <constraint firstItem="Lsq-mc-u9W" firstAttribute="leading" secondItem="IEz-Wn-3pz" secondAttribute="leading" id="Ctb-rz-tz3"/>
+                            <constraint firstItem="mch-6c-ECU" firstAttribute="leading" secondItem="IEz-Wn-3pz" secondAttribute="leading" id="Ebx-Lw-tCk"/>
+                            <constraint firstItem="Lsq-mc-u9W" firstAttribute="top" secondItem="IEz-Wn-3pz" secondAttribute="top" id="QAA-bN-hVr"/>
+                            <constraint firstItem="IEz-Wn-3pz" firstAttribute="trailing" secondItem="mch-6c-ECU" secondAttribute="trailing" id="U7h-Wc-j4k"/>
+                            <constraint firstItem="Lsq-mc-u9W" firstAttribute="trailing" secondItem="IEz-Wn-3pz" secondAttribute="trailing" id="aM7-72-3Dq"/>
+                            <constraint firstItem="IEz-Wn-3pz" firstAttribute="bottom" secondItem="mch-6c-ECU" secondAttribute="bottom" id="th8-qb-Vyk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IEz-Wn-3pz"/>
+                    </view>
+                    <connections>
+                        <outlet property="carImgView" destination="Lsq-mc-u9W" id="sGU-OL-V9s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YLs-2g-Wd7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1904.8" y="10.344827586206897"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ngc-bY-qL8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LvE-4N-D9a" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tj4-vz-i4u">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Yik-aG-bvk" kind="relationship" relationship="rootViewController" id="WiX-6G-FCo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="joZ-9q-XjU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="362" y="-42"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="car_image" width="1200" height="900"/>
+    </resources>
 </document>
