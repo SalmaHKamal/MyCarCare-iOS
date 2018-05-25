@@ -128,6 +128,21 @@
             </objects>
             <point key="canvasLocation" x="-2460" y="-1000.7496251874064"/>
         </scene>
+        <!--Profile-->
+        <scene sceneID="AFP-hN-ial">
+            <objects>
+                <viewController title="Profile" id="o1O-Di-I97" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="07E-iq-Htg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="lza-29-lOG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wXg-IU-wm6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1440" y="-997"/>
+        </scene>
         <!--CarT Item Details View Controller-->
         <scene sceneID="QBg-9t-JX4">
             <objects>
