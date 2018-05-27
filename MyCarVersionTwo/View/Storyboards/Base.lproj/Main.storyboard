@@ -431,7 +431,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mEl-au-3rJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-154.40000000000001" y="-1483.8080959520241"/>
+            <point key="canvasLocation" x="-230" y="-1676"/>
         </scene>
         <!--CarT Item Details View Controller-->
         <scene sceneID="QBg-9t-JX4">
