@@ -14,6 +14,7 @@
             <connections>
                 <outlet property="carImageView" destination="n0h-3L-ba1" id="72B-qx-iUx"/>
                 <outlet property="carNameLabel" destination="BoD-w0-q2W" id="g8G-5B-9jH"/>
+                <outlet property="closeBtn" destination="tX0-T4-J2d" id="fHQ-bd-vlr"/>
                 <outlet property="contentView" destination="YZg-aP-A3d" id="GI1-oV-cAo"/>
             </connections>
         </placeholder>
@@ -31,10 +32,10 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ezn-qe-h3o">
-                            <rect key="frame" x="0.0" y="143.5" width="351" height="46.5"/>
+                            <rect key="frame" x="0.0" y="143" width="351" height="47"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="qgW-mj-mib">
-                                <rect key="frame" x="0.0" y="0.0" width="351" height="46.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="351" height="47"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Car Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BoD-w0-q2W">
@@ -44,12 +45,17 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tX0-T4-J2d">
+                                        <rect key="frame" x="309" y="10" width="34" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.96560013262599464" green="0.9621824350011754" blue="0.96479877119933366" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button" image="cart"/>
+                                    </button>
                                 </subviews>
                             </view>
                             <blurEffect style="light"/>
                         </visualEffectView>
                     </subviews>
-                    <color key="backgroundColor" red="1" green="0.99751604007065564" blue="0.98901998442228634" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -60,5 +66,6 @@
     </objects>
     <resources>
         <image name="car_image" width="1200" height="900"/>
+        <image name="cart" width="1300" height="1300"/>
     </resources>
 </document>

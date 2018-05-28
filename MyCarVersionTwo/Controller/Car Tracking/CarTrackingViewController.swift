@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Floaty
+import FCAlertView
+import SimpleAlert
 
 class CarTrackingViewController: UIViewController , UITableViewDelegate , UITableViewDataSource{
 
@@ -17,7 +20,7 @@ class CarTrackingViewController: UIViewController , UITableViewDelegate , UITabl
     var carTrackingItems : [String] = ["Refuel" , "Oil" , "Car Wash"]
     
     override func viewWillAppear(_ animated: Bool) {
-        createAddBtn()
+        addFloatingBtn()
     }
     
     override func viewDidLoad() {
@@ -25,24 +28,23 @@ class CarTrackingViewController: UIViewController , UITableViewDelegate , UITabl
         carTrackingTableView.delegate = self
         carTrackingTableView.dataSource = self
         carTrackingTableView.separatorColor = UIColor(white: 0.95, alpha: 1)
+        carTrackingTableView.backgroundColor = UIColor(white: 0.95, alpha: 1)
         //carTrackingTableView.isScrollEnabled = false
-        
-        
-        // Do any additional setup after loading the view.
+
     }
     
-    func createAddBtn(){
-        
-        let addBtn = UIButton(frame: CGRect(x: 340, y: 650, width: 50, height: 50))
-        //addBtn.setTitle("add", for: .normal)
-        addBtn.addTarget(self, action: #selector(addCarTrackingItem), for: .touchUpInside)
-        addBtn.backgroundColor = UIColor.darkGray
-        addBtn.layer.cornerRadius = 0.5 * addBtn.bounds.size.width
-        addBtn.clipsToBounds = true
-        addBtn.setImage(UIImage(named: "addItem.png"), for: .normal)
-        addBtn.backgroundImage(for: .normal)
-        self.view.addSubview(addBtn)
-    }
+//    func createAddBtn(){
+//
+//        let addBtn = UIButton(frame: CGRect(x: 340, y: 650, width: 50, height: 50))
+//        //addBtn.setTitle("add", for: .normal)
+//        addBtn.addTarget(self, action: #selector(addCarTrackingItem), for: .touchUpInside)
+//        addBtn.backgroundColor = UIColor.darkGray
+//        addBtn.layer.cornerRadius = 0.5 * addBtn.bounds.size.width
+//        addBtn.clipsToBounds = true
+//        addBtn.setImage(UIImage(named: "addItem.png"), for: .normal)
+//        addBtn.backgroundImage(for: .normal)
+//        self.view.addSubview(addBtn)
+//    }
     
     @objc func addCarTrackingItem(){
         
@@ -50,14 +52,7 @@ class CarTrackingViewController: UIViewController , UITableViewDelegate , UITabl
         self.navigationController?.pushViewController(addCTItemCtrl!, animated: true)
         
     }
-    
 
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return carTrackingItems.count
     }
@@ -84,19 +79,23 @@ class CarTrackingViewController: UIViewController , UITableViewDelegate , UITabl
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let carTItemDetailsObj = self.storyboard?.instantiateViewController(withIdentifier: "carIDetails")
-        self.navigationController?.pushViewController(carTItemDetailsObj!, animated: true)
+//        let popupCV : PopupVC = PopupVC()
+//        self.navigationController?.pushViewController(popupCV, animated: true)
+//        let carTItemDetailsObj = self.storyboard?.instantiateViewController(withIdentifier: "carIDetails")
+//        self.navigationController?.pushViewController(carTItemDetailsObj!, animated: true)
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func addFloatingBtn(){
+        
+        let floaty = Floaty()
+        floaty.buttonColor = UIColor.brown
+        floaty.addItem(title: "New Tracking Item", handler: {item in
+            
+            //self.openSingleCarCtrl()
+        })
+        
+        self.view.addSubview(floaty)
     }
-    */
 
 }

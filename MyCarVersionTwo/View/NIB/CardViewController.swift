@@ -15,6 +15,7 @@ class CardViewController: UIView {
     @IBOutlet weak var carNameLabel: UILabel!
     @IBOutlet weak var carImageView: UIImageView!
     @IBOutlet var contentView: UIView!
+    @IBOutlet weak var closeBtn: UIButton!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
