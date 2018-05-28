@@ -12,10 +12,7 @@ target 'MyCarVersionTwo' do
   pod 'UIDropDown' #dropdown list
   pod 'FCAlertView'
   pod "SimpleAlert"
-
-
   pod 'RAMPaperSwitch'
-  pod 'DropDown'
   pod 'FaceAware'
 
 end

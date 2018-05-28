@@ -23,9 +23,9 @@ class CarListViewController: UIViewController , UITableViewDelegate , UITableVie
                                      2 : Car(name: "BMW" , model: "Anything" , year: "2011" , desc: "This is a Third Car"  , img: "car_image.jpg") ]
     
     
-    var listOfCars : [Car] = [
-    ]
-    
+//    var listOfCars : [Car] = [
+//    ]
+//
     override func viewDidLoad() {
         super.viewDidLoad()
         
