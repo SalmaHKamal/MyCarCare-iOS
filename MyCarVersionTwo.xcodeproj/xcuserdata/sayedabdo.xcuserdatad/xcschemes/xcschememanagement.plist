@@ -7,7 +7,19 @@
 		<key>MyCarVersionTwo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>9</integer>
+=======
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>162856A820B007FD009124CC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+>>>>>>> 877cbcf2a29f61964a1e2be8230f81e8cbaa3948
 		</dict>
 	</dict>
 </dict>

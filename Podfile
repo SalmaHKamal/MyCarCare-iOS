@@ -14,6 +14,8 @@ target 'MyCarVersionTwo' do
   pod "SimpleAlert"
 
 
-  # Pods for MyCarVersionTwo
+  pod 'RAMPaperSwitch'
+  pod 'DropDown'
+  pod 'FaceAware'
 
 end
