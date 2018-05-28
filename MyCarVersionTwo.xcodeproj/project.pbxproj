@@ -7,34 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1621F03720BAA74200CC4C9B /* PopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1621F03620BAA74200CC4C9B /* PopupVC.swift */; };
 		1626142D20B7A4D4000E54F6 /* SingleCarDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1626142C20B7A4D4000E54F6 /* SingleCarDataVC.swift */; };
 		162856AD20B007FD009124CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162856AC20B007FD009124CC /* AppDelegate.swift */; };
 		162856B220B007FE009124CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 162856B020B007FE009124CC /* Main.storyboard */; };
 		162856B520B007FE009124CC /* MyCarVersionTwo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 162856B320B007FE009124CC /* MyCarVersionTwo.xcdatamodeld */; };
 		162856B720B007FE009124CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 162856B620B007FE009124CC /* Assets.xcassets */; };
 		162856BA20B007FE009124CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 162856B820B007FE009124CC /* LaunchScreen.storyboard */; };
+		1636ED2220B8F2FC00CFA5B7 /* updateCarListTableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1636ED2120B8F2FC00CFA5B7 /* updateCarListTableProtocol.swift */; };
 		1650EDF820B42E5100C830FA /* CarTracking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1650EDF720B42E5100C830FA /* CarTracking.storyboard */; };
 		1650EDFA20B42E9600C830FA /* OBD.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1650EDF920B42E9600C830FA /* OBD.storyboard */; };
 		1650EDFC20B42EBA00C830FA /* NewCar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1650EDFB20B42EBA00C830FA /* NewCar.storyboard */; };
 		1650EE0020B4306700C830FA /* testFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1650EDFF20B4306700C830FA /* testFile.swift */; };
 		1650EE0220B449B400C830FA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1650EE0120B449B300C830FA /* Default-568h@2x.png */; };
 		1650EE0420B4524000C830FA /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1650EE0320B4524000C830FA /* CardViewController.swift */; };
-		16653B2920B0098500765363 /* CartTotalPriceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16653B2120B0098500765363 /* CartTotalPriceCell.swift */; };
-		16653B2A20B0098500765363 /* ProductInCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16653B2220B0098500765363 /* ProductInCart.swift */; };
-		16653B2C20B0098500765363 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16653B2420B0098500765363 /* CartViewController.swift */; };
 		16653B2D20B0098500765363 /* cardViewDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16653B2520B0098500765363 /* cardViewDesign.swift */; };
-		16653B3020B0098500765363 /* CartProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16653B2820B0098500765363 /* CartProductCell.swift */; };
 		16653B3420B0118500765363 /* CarTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16653B3320B0118500765363 /* CarTrackingViewController.swift */; };
 		16653B3620B0155800765363 /* CarTrackingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16653B3520B0155800765363 /* CarTrackingCell.swift */; };
-		16653B3B20B169D900765363 /* AddNewCTItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16653B3A20B169D900765363 /* AddNewCTItemViewController.swift */; };
 		16653B3D20B169F700765363 /* CarTItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16653B3C20B169F700765363 /* CarTItemDetailsViewController.swift */; };
 		16653B4020B179BA00765363 /* CarListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16653B3F20B179BA00765363 /* CarListViewController.swift */; };
+		167A012220B83AA8000A6A1C /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167A012120B83AA8000A6A1C /* Car.swift */; };
 		168E90DC20B29E3F003CA24C /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 168E90DA20B29E3F003CA24C /* CardViewController.xib */; };
+		16A4A08120BB3C8F00246A60 /* CarCardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16A4A08020BB3C8F00246A60 /* CarCardVC.xib */; };
+		16A4A08320BB3CA500246A60 /* CarCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A4A08220BB3CA500246A60 /* CarCardVC.swift */; };
 		526078B17F06B231CC4E66BB /* Pods_MyCarVersionTwo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A509AEE71DA2C3B9506240 /* Pods_MyCarVersionTwo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		03A509AEE71DA2C3B9506240 /* Pods_MyCarVersionTwo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCarVersionTwo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1621F03620BAA74200CC4C9B /* PopupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupVC.swift; sourceTree = "<group>"; };
 		1626142C20B7A4D4000E54F6 /* SingleCarDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCarDataVC.swift; sourceTree = "<group>"; };
 		162856A920B007FD009124CC /* MyCarVersionTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCarVersionTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		162856AC20B007FD009124CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,23 +44,22 @@
 		162856B620B007FE009124CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		162856B920B007FE009124CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		162856BB20B007FE009124CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1636ED2120B8F2FC00CFA5B7 /* updateCarListTableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = updateCarListTableProtocol.swift; sourceTree = "<group>"; };
 		1650EDF720B42E5100C830FA /* CarTracking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CarTracking.storyboard; sourceTree = "<group>"; };
 		1650EDF920B42E9600C830FA /* OBD.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OBD.storyboard; sourceTree = "<group>"; };
 		1650EDFB20B42EBA00C830FA /* NewCar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewCar.storyboard; sourceTree = "<group>"; };
 		1650EDFF20B4306700C830FA /* testFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testFile.swift; sourceTree = "<group>"; };
 		1650EE0120B449B300C830FA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		1650EE0320B4524000C830FA /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
-		16653B2120B0098500765363 /* CartTotalPriceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartTotalPriceCell.swift; sourceTree = "<group>"; };
-		16653B2220B0098500765363 /* ProductInCart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductInCart.swift; sourceTree = "<group>"; };
-		16653B2420B0098500765363 /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		16653B2520B0098500765363 /* cardViewDesign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cardViewDesign.swift; sourceTree = "<group>"; };
-		16653B2820B0098500765363 /* CartProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartProductCell.swift; sourceTree = "<group>"; };
 		16653B3320B0118500765363 /* CarTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTrackingViewController.swift; sourceTree = "<group>"; };
 		16653B3520B0155800765363 /* CarTrackingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTrackingCell.swift; sourceTree = "<group>"; };
-		16653B3A20B169D900765363 /* AddNewCTItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCTItemViewController.swift; sourceTree = "<group>"; };
 		16653B3C20B169F700765363 /* CarTItemDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTItemDetailsViewController.swift; sourceTree = "<group>"; };
 		16653B3F20B179BA00765363 /* CarListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewController.swift; sourceTree = "<group>"; };
+		167A012120B83AA8000A6A1C /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		168E90DA20B29E3F003CA24C /* CardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardViewController.xib; sourceTree = "<group>"; };
+		16A4A08020BB3C8F00246A60 /* CarCardVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarCardVC.xib; sourceTree = "<group>"; };
+		16A4A08220BB3CA500246A60 /* CarCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCardVC.swift; sourceTree = "<group>"; };
 		5F559396F01500367F73DC6A /* Pods-MyCarVersionTwo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCarVersionTwo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyCarVersionTwo/Pods-MyCarVersionTwo.release.xcconfig"; sourceTree = "<group>"; };
 		E491662F9A1725960D58B5C9 /* Pods-MyCarVersionTwo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCarVersionTwo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyCarVersionTwo/Pods-MyCarVersionTwo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				1650EDFF20B4306700C830FA /* testFile.swift */,
+				167A012120B83AA8000A6A1C /* Car.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -123,6 +124,7 @@
 			children = (
 				16653B2020B0096F00765363 /* Car Tracking */,
 				16653B3E20B177B600765363 /* addCar */,
+				1636ED2120B8F2FC00CFA5B7 /* updateCarListTableProtocol.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -143,6 +145,8 @@
 			children = (
 				168E90DA20B29E3F003CA24C /* CardViewController.xib */,
 				1650EE0320B4524000C830FA /* CardViewController.swift */,
+				16A4A08020BB3C8F00246A60 /* CarCardVC.xib */,
+				16A4A08220BB3CA500246A60 /* CarCardVC.swift */,
 			);
 			path = NIB;
 			sourceTree = "<group>";
@@ -151,14 +155,10 @@
 			isa = PBXGroup;
 			children = (
 				16653B2520B0098500765363 /* cardViewDesign.swift */,
-				16653B2820B0098500765363 /* CartProductCell.swift */,
-				16653B2120B0098500765363 /* CartTotalPriceCell.swift */,
-				16653B2420B0098500765363 /* CartViewController.swift */,
-				16653B2220B0098500765363 /* ProductInCart.swift */,
 				16653B3320B0118500765363 /* CarTrackingViewController.swift */,
 				16653B3520B0155800765363 /* CarTrackingCell.swift */,
-				16653B3A20B169D900765363 /* AddNewCTItemViewController.swift */,
 				16653B3C20B169F700765363 /* CarTItemDetailsViewController.swift */,
+				1621F03620BAA74200CC4C9B /* PopupVC.swift */,
 			);
 			path = "Car Tracking";
 			sourceTree = "<group>";
@@ -261,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				162856BA20B007FE009124CC /* LaunchScreen.storyboard in Resources */,
+				16A4A08120BB3C8F00246A60 /* CarCardVC.xib in Resources */,
 				162856B720B007FE009124CC /* Assets.xcassets in Resources */,
 				1650EDFA20B42E9600C830FA /* OBD.storyboard in Resources */,
 				168E90DC20B29E3F003CA24C /* CardViewController.xib in Resources */,
@@ -315,14 +316,22 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MyCarVersionTwo/Pods-MyCarVersionTwo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
+				"${BUILT_PRODUCTS_DIR}/FCAlertView/FCAlertView.framework",
 				"${BUILT_PRODUCTS_DIR}/Floaty/Floaty.framework",
+				"${BUILT_PRODUCTS_DIR}/MultilineTextField/MultilineTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/SimpleAlert/SimpleAlert.framework",
 				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
+				"${BUILT_PRODUCTS_DIR}/UIDropDown/UIDropDown.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FCAlertView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Floaty.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MultilineTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimpleAlert.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIDropDown.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -336,19 +345,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16653B2920B0098500765363 /* CartTotalPriceCell.swift in Sources */,
 				162856AD20B007FD009124CC /* AppDelegate.swift in Sources */,
-				16653B3020B0098500765363 /* CartProductCell.swift in Sources */,
-				16653B2A20B0098500765363 /* ProductInCart.swift in Sources */,
-				16653B2C20B0098500765363 /* CartViewController.swift in Sources */,
+				1636ED2220B8F2FC00CFA5B7 /* updateCarListTableProtocol.swift in Sources */,
 				16653B2D20B0098500765363 /* cardViewDesign.swift in Sources */,
+				1621F03720BAA74200CC4C9B /* PopupVC.swift in Sources */,
 				16653B3620B0155800765363 /* CarTrackingCell.swift in Sources */,
 				16653B3D20B169F700765363 /* CarTItemDetailsViewController.swift in Sources */,
 				1650EE0420B4524000C830FA /* CardViewController.swift in Sources */,
 				1626142D20B7A4D4000E54F6 /* SingleCarDataVC.swift in Sources */,
-				16653B3B20B169D900765363 /* AddNewCTItemViewController.swift in Sources */,
+				167A012220B83AA8000A6A1C /* Car.swift in Sources */,
 				162856B520B007FE009124CC /* MyCarVersionTwo.xcdatamodeld in Sources */,
 				1650EE0020B4306700C830FA /* testFile.swift in Sources */,
+				16A4A08320BB3CA500246A60 /* CarCardVC.swift in Sources */,
 				16653B4020B179BA00765363 /* CarListViewController.swift in Sources */,
 				16653B3420B0118500765363 /* CarTrackingViewController.swift in Sources */,
 			);

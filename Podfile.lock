@@ -1,18 +1,30 @@
 PODS:
   - DropDown (2.3.1)
+  - FCAlertView (1.4.0)
   - Floaty (3.0.1)
+  - MultilineTextField (0.2.2)
+  - SimpleAlert (3.0.0)
   - TextFieldEffects (1.4.0)
+  - UIDropDown (1.1.1)
 
 DEPENDENCIES:
   - DropDown
+  - FCAlertView
   - Floaty (~> 3.0.0)
+  - MultilineTextField
+  - SimpleAlert
   - TextFieldEffects
+  - UIDropDown
 
 SPEC CHECKSUMS:
   DropDown: 20499c7b2731b0d21609af924e47c7677a2be50d
+  FCAlertView: fdddd63381898c1d1a5a20c9f084fbd2c6d12f8b
   Floaty: bb7a353deee9ddcc14c584ca9c538efdc19669f2
+  MultilineTextField: 4fe1fbdd32b97c19712b2988f4ae2f73002821b9
+  SimpleAlert: 7265c3006749c680627545b61ac37d9ab1ab0be6
   TextFieldEffects: 4ee41b5216e674d55fb6ac25107bf1af7629176f
+  UIDropDown: 22e6e3e22d419884c8f21d95ea9be36aac905ed4
 
-PODFILE CHECKSUM: 914b9679a094c189a7c9bab6f56efb3d0643ecfb
+PODFILE CHECKSUM: 3c8f90ca24f30a6a88a33aa664a7726fc35df32f
 
 COCOAPODS: 1.4.0

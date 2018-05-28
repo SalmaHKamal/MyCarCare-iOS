@@ -8,6 +8,10 @@ target 'MyCarVersionTwo' do
   pod "Floaty", "~> 3.0.0" # Use version 4.0.0 for Swift 4.0
   pod 'DropDown'	
   pod 'TextFieldEffects'
+  pod 'MultilineTextField'
+  pod 'UIDropDown' #dropdown list
+  pod 'FCAlertView'
+  pod "SimpleAlert"
 
 
   # Pods for MyCarVersionTwo
