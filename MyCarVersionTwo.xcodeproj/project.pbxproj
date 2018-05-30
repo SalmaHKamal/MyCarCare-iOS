@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0436B25F20BEAC17008D904B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436B25E20BEAC17008D904B /* LoginViewController.swift */; };
+		04B91B8320BECBD2003F60BB /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B91B8220BECBD2003F60BB /* WebViewController.swift */; };
 		1621F03720BAA74200CC4C9B /* PopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1621F03620BAA74200CC4C9B /* PopupVC.swift */; };
 		1626142D20B7A4D4000E54F6 /* SingleCarDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1626142C20B7A4D4000E54F6 /* SingleCarDataVC.swift */; };
 		162856AD20B007FD009124CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162856AC20B007FD009124CC /* AppDelegate.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0436B25E20BEAC17008D904B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		04B91B8220BECBD2003F60BB /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		1621F03620BAA74200CC4C9B /* PopupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupVC.swift; sourceTree = "<group>"; };
 		1626142C20B7A4D4000E54F6 /* SingleCarDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCarDataVC.swift; sourceTree = "<group>"; };
 		162856A920B007FD009124CC /* MyCarVersionTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCarVersionTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +82,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0436B25D20BEABEB008D904B /* Login&Register */ = {
+			isa = PBXGroup;
+			children = (
+				0436B25E20BEAC17008D904B /* LoginViewController.swift */,
+			);
+			path = "Login&Register";
+			sourceTree = "<group>";
+		};
+		04B91B8120BECBBF003F60BB /* webView */ = {
+			isa = PBXGroup;
+			children = (
+				04B91B8220BECBD2003F60BB /* WebViewController.swift */,
+			);
+			path = webView;
+			sourceTree = "<group>";
+		};
 		162856A020B007FD009124CC = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +144,8 @@
 		16289D8120B4162E00970D11 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				04B91B8120BECBBF003F60BB /* webView */,
+				0436B25D20BEABEB008D904B /* Login&Register */,
 				16D5302D20B8632900BCA4BD /* User */,
 				16653B2020B0096F00765363 /* Car Tracking */,
 				16653B3E20B177B600765363 /* addCar */,
@@ -221,7 +243,6 @@
 				162856A620B007FD009124CC /* Frameworks */,
 				162856A720B007FD009124CC /* Resources */,
 				F251E8AB956DF5668712AF54 /* [CP] Embed Pods Frameworks */,
-				7E5D288514FFFA0288807C4F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -304,21 +325,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7E5D288514FFFA0288807C4F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyCarVersionTwo/Pods-MyCarVersionTwo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		F251E8AB956DF5668712AF54 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -372,6 +378,8 @@
 				167A012220B83AA8000A6A1C /* Car.swift in Sources */,
 				162856B520B007FE009124CC /* MyCarVersionTwo.xcdatamodeld in Sources */,
 				1650EE0020B4306700C830FA /* testFile.swift in Sources */,
+				04B91B8320BECBD2003F60BB /* WebViewController.swift in Sources */,
+				0436B25F20BEAC17008D904B /* LoginViewController.swift in Sources */,
 				16A4A08320BB3CA500246A60 /* CarCardVC.swift in Sources */,
 				16653B4020B179BA00765363 /* CarListViewController.swift in Sources */,
 				16653B3420B0118500765363 /* CarTrackingViewController.swift in Sources */,

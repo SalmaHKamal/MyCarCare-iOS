@@ -11,8 +11,9 @@ target 'MyCarVersionTwo' do
   pod 'MultilineTextField'
   pod 'UIDropDown' #dropdown list
   pod 'FCAlertView'
-  pod "SimpleAlert"
+  pod 'SimpleAlert'
   pod 'RAMPaperSwitch'
   pod 'FaceAware'
+
 
 end

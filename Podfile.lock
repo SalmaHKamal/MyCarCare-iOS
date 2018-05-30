@@ -20,6 +20,18 @@ DEPENDENCIES:
   - TextFieldEffects
   - UIDropDown
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - DropDown
+    - FaceAware
+    - FCAlertView
+    - Floaty
+    - MultilineTextField
+    - RAMPaperSwitch
+    - SimpleAlert
+    - TextFieldEffects
+    - UIDropDown
+
 SPEC CHECKSUMS:
   DropDown: 20499c7b2731b0d21609af924e47c7677a2be50d
   FaceAware: 421436f9d16aacdb26ffcf8e5a39a1dd68630395
@@ -31,6 +43,6 @@ SPEC CHECKSUMS:
   TextFieldEffects: 4ee41b5216e674d55fb6ac25107bf1af7629176f
   UIDropDown: 22e6e3e22d419884c8f21d95ea9be36aac905ed4
 
-PODFILE CHECKSUM: faabad2e3a54c013dacfaa54e68684fdcec91339
+PODFILE CHECKSUM: 34412c315919958160121fd124b127cdd199c0bb
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3
