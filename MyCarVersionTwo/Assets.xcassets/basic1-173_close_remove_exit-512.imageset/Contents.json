@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "basic1-173_close_remove_exit-512.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "basic1-173_close_remove_exit-512.png",
       "scale" : "2x"
     },
     {
