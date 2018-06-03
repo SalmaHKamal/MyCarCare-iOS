@@ -2,26 +2,33 @@
 //  Car.swift
 //  MyCarVersionTwo
 //
-//  Created by Sayed Abdo on 5/25/18.
+//  Created by Yasmin Ahmed on 5/31/18.
 //  Copyright © 2018 Sayed Abdo. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import RealmSwift
 
-class Car{
+class Car: Object {
+
+    @objc dynamic var id = UUID().uuidString;
+    @objc dynamic var name = "";
+    @objc dynamic var model = "";
+    @objc dynamic var year = "";
+    @objc dynamic var desc = "";
+    @objc dynamic var image = "";
     
-    var carName : String 
-    var carModel : String
-    var carYear : String
-    var carDescription : String
-    var carImage : String
-    
-    init(name : String , model : String , year : String , desc : String , img: String) {
-        carName = name
-        carModel = model
-        carYear = year
-        carImage = img
-        carDescription = desc
+    override static func primaryKey() -> String? {
+        return "id";
     }
     
+    convenience init (carNameVal: String, carModelVal: String, carYearVal: String, carDescVal: String, carImageVal: String) {
+        
+        self.init();
+        self.name = carNameVal;
+        self.model = carModelVal;
+        self.year = carYearVal;
+        self.desc = carDescVal;
+        self.image = carImageVal;
+    }
 }

@@ -14,5 +14,6 @@ target 'MyCarVersionTwo' do
   pod "SimpleAlert"
   pod 'RAMPaperSwitch'
   pod 'FaceAware'
+  pod 'RealmSwift'
 
 end

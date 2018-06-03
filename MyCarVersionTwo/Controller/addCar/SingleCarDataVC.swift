@@ -27,12 +27,12 @@ class SingleCarDataVC: UITableViewController , UIImagePickerControllerDelegate ,
     override func viewWillAppear(_ animated: Bool) {
         if let car = singleCar {
             
-            let img = UIImage(named : (car.carImage))
+            let img = UIImage(named : (car.image))
             carImgView.image = img
-            carNameField.text = car.carName
-            carModelField.text = car.carModel
-            carYearField.text = car.carYear
-            carDescField.text = car.carDescription
+            carNameField.text = car.name
+            carModelField.text = car.model
+            carYearField.text = car.year
+            carDescField.text = car.desc
         }
 
     }
@@ -68,16 +68,16 @@ class SingleCarDataVC: UITableViewController , UIImagePickerControllerDelegate ,
   
     @IBAction func saveCarDetails(_ sender: Any) {
         if let carvar = singleCar {
-            carvar.carName = carNameField.text!
-            carvar.carModel = carModelField.text!
-            carvar.carDescription = carDescField.text!
-            carvar.carYear = carYearField.text!
+            carvar.name = carNameField.text!
+            carvar.model = carModelField.text!
+            carvar.desc = carDescField.text!
+            carvar.year = carYearField.text!
         }else{
-            let newSingleCar = Car(name: carNameField.text! ,
-                                   model: carModelField.text! ,
-                                   year: carYearField.text! ,
-                                   desc: carYearField.text! ,
-                                   img: "car_image.jpg")
+            let newSingleCar = Car(carNameVal: carNameField.text! ,
+                                   carModelVal: carModelField.text! ,
+                                   carYearVal: carYearField.text! ,
+                                   carDescVal: carYearField.text! ,
+                                   carImageVal: "car_image.jpg")
             
             delegate?.updateTableValues(newCar: newSingleCar)
             

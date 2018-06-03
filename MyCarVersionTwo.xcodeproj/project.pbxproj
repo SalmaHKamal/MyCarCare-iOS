@@ -18,7 +18,6 @@
 		1650EDF820B42E5100C830FA /* CarTracking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1650EDF720B42E5100C830FA /* CarTracking.storyboard */; };
 		1650EDFA20B42E9600C830FA /* OBD.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1650EDF920B42E9600C830FA /* OBD.storyboard */; };
 		1650EDFC20B42EBA00C830FA /* NewCar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1650EDFB20B42EBA00C830FA /* NewCar.storyboard */; };
-		1650EE0020B4306700C830FA /* testFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1650EDFF20B4306700C830FA /* testFile.swift */; };
 		1650EE0220B449B400C830FA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1650EE0120B449B300C830FA /* Default-568h@2x.png */; };
 		1650EE0420B4524000C830FA /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1650EE0320B4524000C830FA /* CardViewController.swift */; };
 		16653B2D20B0098500765363 /* cardViewDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16653B2520B0098500765363 /* cardViewDesign.swift */; };
@@ -26,11 +25,21 @@
 		16653B3620B0155800765363 /* CarTrackingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16653B3520B0155800765363 /* CarTrackingCell.swift */; };
 		16653B3D20B169F700765363 /* CarTItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16653B3C20B169F700765363 /* CarTItemDetailsViewController.swift */; };
 		16653B4020B179BA00765363 /* CarListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16653B3F20B179BA00765363 /* CarListViewController.swift */; };
-		167A012220B83AA8000A6A1C /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167A012120B83AA8000A6A1C /* Car.swift */; };
 		168E90DC20B29E3F003CA24C /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 168E90DA20B29E3F003CA24C /* CardViewController.xib */; };
 		16A4A08120BB3C8F00246A60 /* CarCardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16A4A08020BB3C8F00246A60 /* CarCardVC.xib */; };
 		16A4A08320BB3CA500246A60 /* CarCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A4A08220BB3CA500246A60 /* CarCardVC.swift */; };
 		16D5302F20B8637B00BCA4BD /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5302E20B8637B00BCA4BD /* UserProfileController.swift */; };
+		7413386B20C0217C0095D8DA /* CarDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7413386A20C0217C0095D8DA /* CarDAO.swift */; };
+		7413386D20C0218C0095D8DA /* OilDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7413386C20C0218C0095D8DA /* OilDAO.swift */; };
+		7413386F20C021DC0095D8DA /* RefuelDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7413386E20C021DC0095D8DA /* RefuelDAO.swift */; };
+		7413387120C021EB0095D8DA /* CarWashDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7413387020C021EB0095D8DA /* CarWashDAO.swift */; };
+		7413387F20C03FF60095D8DA /* Oil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7413387E20C03FF60095D8DA /* Oil.swift */; };
+		7413388120C040090095D8DA /* Refuel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7413388020C040090095D8DA /* Refuel.swift */; };
+		7413388320C040120095D8DA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7413388220C040120095D8DA /* User.swift */; };
+		7413388520C040200095D8DA /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7413388420C040200095D8DA /* Car.swift */; };
+		7413388720C043810095D8DA /* CarWash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7413388620C043810095D8DA /* CarWash.swift */; };
+		7413388920C09DC60095D8DA /* UserDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7413388820C09DC60095D8DA /* UserDAO.swift */; };
+		745927DB20BC26620060D923 /* SideMenuHolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745927DA20BC26620060D923 /* SideMenuHolderViewController.swift */; };
 		FE82C35C046FB879A2FA4795 /* Pods_MyCarVersionTwo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D78B1A43E028116C274282D0 /* Pods_MyCarVersionTwo.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +57,6 @@
 		1650EDF720B42E5100C830FA /* CarTracking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CarTracking.storyboard; sourceTree = "<group>"; };
 		1650EDF920B42E9600C830FA /* OBD.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OBD.storyboard; sourceTree = "<group>"; };
 		1650EDFB20B42EBA00C830FA /* NewCar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewCar.storyboard; sourceTree = "<group>"; };
-		1650EDFF20B4306700C830FA /* testFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testFile.swift; sourceTree = "<group>"; };
 		1650EE0120B449B300C830FA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		1650EE0320B4524000C830FA /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		16653B2520B0098500765363 /* cardViewDesign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cardViewDesign.swift; sourceTree = "<group>"; };
@@ -56,12 +64,22 @@
 		16653B3520B0155800765363 /* CarTrackingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTrackingCell.swift; sourceTree = "<group>"; };
 		16653B3C20B169F700765363 /* CarTItemDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTItemDetailsViewController.swift; sourceTree = "<group>"; };
 		16653B3F20B179BA00765363 /* CarListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewController.swift; sourceTree = "<group>"; };
-		167A012120B83AA8000A6A1C /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		168E90DA20B29E3F003CA24C /* CardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardViewController.xib; sourceTree = "<group>"; };
 		16A4A08020BB3C8F00246A60 /* CarCardVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarCardVC.xib; sourceTree = "<group>"; };
 		16A4A08220BB3CA500246A60 /* CarCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCardVC.swift; sourceTree = "<group>"; };
 		16D5302E20B8637B00BCA4BD /* UserProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
 		4E3C5372C003FD0AF90BF475 /* Pods-MyCarVersionTwo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCarVersionTwo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyCarVersionTwo/Pods-MyCarVersionTwo.release.xcconfig"; sourceTree = "<group>"; };
+		7413386A20C0217C0095D8DA /* CarDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDAO.swift; sourceTree = "<group>"; };
+		7413386C20C0218C0095D8DA /* OilDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OilDAO.swift; sourceTree = "<group>"; };
+		7413386E20C021DC0095D8DA /* RefuelDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefuelDAO.swift; sourceTree = "<group>"; };
+		7413387020C021EB0095D8DA /* CarWashDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarWashDAO.swift; sourceTree = "<group>"; };
+		7413387E20C03FF60095D8DA /* Oil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oil.swift; sourceTree = "<group>"; };
+		7413388020C040090095D8DA /* Refuel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refuel.swift; sourceTree = "<group>"; };
+		7413388220C040120095D8DA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7413388420C040200095D8DA /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		7413388620C043810095D8DA /* CarWash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarWash.swift; sourceTree = "<group>"; };
+		7413388820C09DC60095D8DA /* UserDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDAO.swift; sourceTree = "<group>"; };
+		745927DA20BC26620060D923 /* SideMenuHolderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuHolderViewController.swift; sourceTree = "<group>"; };
 		D78B1A43E028116C274282D0 /* Pods_MyCarVersionTwo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCarVersionTwo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E01D5C2731F66608A8B81A9B /* Pods-MyCarVersionTwo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCarVersionTwo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyCarVersionTwo/Pods-MyCarVersionTwo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +117,7 @@
 		162856AB20B007FD009124CC /* MyCarVersionTwo */ = {
 			isa = PBXGroup;
 			children = (
+				7413386920C021340095D8DA /* DAO */,
 				16289D8020B4162200970D11 /* Model */,
 				168E90D820B29DB0003CA24C /* View */,
 				16289D8120B4162E00970D11 /* Controller */,
@@ -115,8 +134,11 @@
 		16289D8020B4162200970D11 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1650EDFF20B4306700C830FA /* testFile.swift */,
-				167A012120B83AA8000A6A1C /* Car.swift */,
+				7413387E20C03FF60095D8DA /* Oil.swift */,
+				7413388020C040090095D8DA /* Refuel.swift */,
+				7413388220C040120095D8DA /* User.swift */,
+				7413388420C040200095D8DA /* Car.swift */,
+				7413388620C043810095D8DA /* CarWash.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -124,6 +146,7 @@
 		16289D8120B4162E00970D11 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				745927D920BC26420060D923 /* sideMenu */,
 				16D5302D20B8632900BCA4BD /* User */,
 				16653B2020B0096F00765363 /* Car Tracking */,
 				16653B3E20B177B600765363 /* addCar */,
@@ -192,6 +215,26 @@
 			path = User;
 			sourceTree = "<group>";
 		};
+		7413386920C021340095D8DA /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				7413386A20C0217C0095D8DA /* CarDAO.swift */,
+				7413386C20C0218C0095D8DA /* OilDAO.swift */,
+				7413386E20C021DC0095D8DA /* RefuelDAO.swift */,
+				7413387020C021EB0095D8DA /* CarWashDAO.swift */,
+				7413388820C09DC60095D8DA /* UserDAO.swift */,
+			);
+			path = DAO;
+			sourceTree = "<group>";
+		};
+		745927D920BC26420060D923 /* sideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				745927DA20BC26620060D923 /* SideMenuHolderViewController.swift */,
+			);
+			path = sideMenu;
+			sourceTree = "<group>";
+		};
 		A169512708E47D30F2C4D898 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,7 +264,6 @@
 				162856A620B007FD009124CC /* Frameworks */,
 				162856A720B007FD009124CC /* Resources */,
 				F251E8AB956DF5668712AF54 /* [CP] Embed Pods Frameworks */,
-				7E5D288514FFFA0288807C4F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -304,21 +346,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7E5D288514FFFA0288807C4F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyCarVersionTwo/Pods-MyCarVersionTwo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		F251E8AB956DF5668712AF54 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -332,6 +359,8 @@
 				"${BUILT_PRODUCTS_DIR}/Floaty/Floaty.framework",
 				"${BUILT_PRODUCTS_DIR}/MultilineTextField/MultilineTextField.framework",
 				"${BUILT_PRODUCTS_DIR}/RAMPaperSwitch/RAMPaperSwitch.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SimpleAlert/SimpleAlert.framework",
 				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
 				"${BUILT_PRODUCTS_DIR}/UIDropDown/UIDropDown.framework",
@@ -344,6 +373,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Floaty.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MultilineTextField.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMPaperSwitch.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimpleAlert.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIDropDown.framework",
@@ -360,21 +391,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7413388320C040120095D8DA /* User.swift in Sources */,
 				162856AD20B007FD009124CC /* AppDelegate.swift in Sources */,
+				7413387120C021EB0095D8DA /* CarWashDAO.swift in Sources */,
+				7413388120C040090095D8DA /* Refuel.swift in Sources */,
 				1636ED2220B8F2FC00CFA5B7 /* updateCarListTableProtocol.swift in Sources */,
 				16653B2D20B0098500765363 /* cardViewDesign.swift in Sources */,
 				1621F03720BAA74200CC4C9B /* PopupVC.swift in Sources */,
+				7413387F20C03FF60095D8DA /* Oil.swift in Sources */,
+				745927DB20BC26620060D923 /* SideMenuHolderViewController.swift in Sources */,
+				7413386D20C0218C0095D8DA /* OilDAO.swift in Sources */,
+				7413388520C040200095D8DA /* Car.swift in Sources */,
 				16653B3620B0155800765363 /* CarTrackingCell.swift in Sources */,
 				16D5302F20B8637B00BCA4BD /* UserProfileController.swift in Sources */,
 				16653B3D20B169F700765363 /* CarTItemDetailsViewController.swift in Sources */,
 				1650EE0420B4524000C830FA /* CardViewController.swift in Sources */,
 				1626142D20B7A4D4000E54F6 /* SingleCarDataVC.swift in Sources */,
-				167A012220B83AA8000A6A1C /* Car.swift in Sources */,
+				7413388720C043810095D8DA /* CarWash.swift in Sources */,
+				7413386B20C0217C0095D8DA /* CarDAO.swift in Sources */,
 				162856B520B007FE009124CC /* MyCarVersionTwo.xcdatamodeld in Sources */,
-				1650EE0020B4306700C830FA /* testFile.swift in Sources */,
+				7413388920C09DC60095D8DA /* UserDAO.swift in Sources */,
 				16A4A08320BB3CA500246A60 /* CarCardVC.swift in Sources */,
 				16653B4020B179BA00765363 /* CarListViewController.swift in Sources */,
 				16653B3420B0118500765363 /* CarTrackingViewController.swift in Sources */,
+				7413386F20C021DC0095D8DA /* RefuelDAO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

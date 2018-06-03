@@ -18,9 +18,9 @@ class CarListViewController: UIViewController , UITableViewDelegate , UITableVie
     
     //variables
 
-    var listOfCars : [Int : Car ] = [0 : Car(name: "Nissan" , model: "Sunny" , year: "2000" , desc: "This is a First Car" , img: "car_image.jpg") ,
-                                     1 : Car(name: "Toyota" , model: "Camry" , year: "2009" , desc: "This is a Second Car" , img: "cat-1285634_960_720.jpg") ,
-                                     2 : Car(name: "BMW" , model: "Anything" , year: "2011" , desc: "This is a Third Car"  , img: "car_image.jpg") ]
+    var listOfCars : [Int : Car] = [0 : Car(carNameVal: "Nissan" , carModelVal: "Sunny" , carYearVal: "2000" , carDescVal: "This is a First Car" , carImageVal: "car_image.jpg") ,
+                                     1 : Car(carNameVal: "Toyota" , carModelVal: "Camry" , carYearVal: "2009" , carDescVal: "This is a Second Car" , carImageVal: "cat-1285634_960_720.jpg") ,
+                                     2 : Car(carNameVal: "BMW" , carModelVal: "Anything" , carYearVal: "2011" , carDescVal: "This is a Third Car"  , carImageVal: "car_image.jpg") ]
     
     
 //    var listOfCars : [Car] = [
@@ -60,11 +60,11 @@ class CarListViewController: UIViewController , UITableViewDelegate , UITableVie
         
         let detailsVc : SingleCarDataVC = storyboard?.instantiateViewController(withIdentifier:"SingleCarData") as! SingleCarDataVC
         
-        detailsVc.singleCar?.carImage = "car_image.jpg"
-        detailsVc.singleCar?.carName = ""
-        detailsVc.singleCar?.carModel = ""
-        detailsVc.singleCar?.carYear = ""
-        detailsVc.singleCar?.carDescription = ""
+        detailsVc.singleCar?.image = "car_image.jpg"
+        detailsVc.singleCar?.name = ""
+        detailsVc.singleCar?.model = ""
+        detailsVc.singleCar?.year = ""
+        detailsVc.singleCar?.desc = ""
         
         detailsVc.delegate = self
         
@@ -87,8 +87,8 @@ class CarListViewController: UIViewController , UITableViewDelegate , UITableVie
 
         // get subView and add it on a cell
         let subView = CardViewController.init(frame: CGRect(x:0 , y:0 , width: 351 , height : 200))
-        subView.carNameLabel.text = listOfCars[indexPath.row]?.carName
-        let img = UIImage(named : (listOfCars[indexPath.row]?.carImage)!)
+        subView.carNameLabel.text = listOfCars[indexPath.row]?.name
+        let img = UIImage(named : (listOfCars[indexPath.row]?.image)!)
         subView.carImageView.image = img
         subView.closeBtn.addTarget(self, action: #selector(deleteCar(_ :)), for: .touchUpInside)
         Cell.contentView.addSubview(subView)
