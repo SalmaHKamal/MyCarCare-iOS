@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0436B25F20BEAC17008D904B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436B25E20BEAC17008D904B /* LoginViewController.swift */; };
+		04B91B8320BECBD2003F60BB /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B91B8220BECBD2003F60BB /* WebViewController.swift */; };
 		1621F03720BAA74200CC4C9B /* PopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1621F03620BAA74200CC4C9B /* PopupVC.swift */; };
 		1626142D20B7A4D4000E54F6 /* SingleCarDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1626142C20B7A4D4000E54F6 /* SingleCarDataVC.swift */; };
 		162856AD20B007FD009124CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162856AC20B007FD009124CC /* AppDelegate.swift */; };
@@ -39,11 +41,13 @@
 		7413388520C040200095D8DA /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7413388420C040200095D8DA /* Car.swift */; };
 		7413388720C043810095D8DA /* CarWash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7413388620C043810095D8DA /* CarWash.swift */; };
 		7413388920C09DC60095D8DA /* UserDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7413388820C09DC60095D8DA /* UserDAO.swift */; };
-		745927DB20BC26620060D923 /* SideMenuHolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745927DA20BC26620060D923 /* SideMenuHolderViewController.swift */; };
+		743E1AC420C405CF00CFDF57 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743E1AC320C405CF00CFDF57 /* HomeViewController.swift */; };
 		FE82C35C046FB879A2FA4795 /* Pods_MyCarVersionTwo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D78B1A43E028116C274282D0 /* Pods_MyCarVersionTwo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0436B25E20BEAC17008D904B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		04B91B8220BECBD2003F60BB /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		1621F03620BAA74200CC4C9B /* PopupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupVC.swift; sourceTree = "<group>"; };
 		1626142C20B7A4D4000E54F6 /* SingleCarDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCarDataVC.swift; sourceTree = "<group>"; };
 		162856A920B007FD009124CC /* MyCarVersionTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCarVersionTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,7 +83,7 @@
 		7413388420C040200095D8DA /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		7413388620C043810095D8DA /* CarWash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarWash.swift; sourceTree = "<group>"; };
 		7413388820C09DC60095D8DA /* UserDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDAO.swift; sourceTree = "<group>"; };
-		745927DA20BC26620060D923 /* SideMenuHolderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuHolderViewController.swift; sourceTree = "<group>"; };
+		743E1AC320C405CF00CFDF57 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D78B1A43E028116C274282D0 /* Pods_MyCarVersionTwo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCarVersionTwo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E01D5C2731F66608A8B81A9B /* Pods-MyCarVersionTwo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCarVersionTwo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyCarVersionTwo/Pods-MyCarVersionTwo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +100,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0436B25D20BEABEB008D904B /* Login&Register */ = {
+			isa = PBXGroup;
+			children = (
+				0436B25E20BEAC17008D904B /* LoginViewController.swift */,
+			);
+			path = "Login&Register";
+			sourceTree = "<group>";
+		};
+		04B91B8120BECBBF003F60BB /* webView */ = {
+			isa = PBXGroup;
+			children = (
+				04B91B8220BECBD2003F60BB /* WebViewController.swift */,
+			);
+			path = webView;
+			sourceTree = "<group>";
+		};
 		162856A020B007FD009124CC = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +167,9 @@
 			isa = PBXGroup;
 			children = (
 				745927D920BC26420060D923 /* sideMenu */,
+				743E1AC320C405CF00CFDF57 /* HomeViewController.swift */,
+				04B91B8120BECBBF003F60BB /* webView */,
+				0436B25D20BEABEB008D904B /* Login&Register */,
 				16D5302D20B8632900BCA4BD /* User */,
 				16653B2020B0096F00765363 /* Car Tracking */,
 				16653B3E20B177B600765363 /* addCar */,
@@ -230,7 +253,6 @@
 		745927D920BC26420060D923 /* sideMenu */ = {
 			isa = PBXGroup;
 			children = (
-				745927DA20BC26620060D923 /* SideMenuHolderViewController.swift */,
 			);
 			path = sideMenu;
 			sourceTree = "<group>";
@@ -264,6 +286,7 @@
 				162856A620B007FD009124CC /* Frameworks */,
 				162856A720B007FD009124CC /* Resources */,
 				F251E8AB956DF5668712AF54 /* [CP] Embed Pods Frameworks */,
+				149C3184BC02BE73C955AB3F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -328,6 +351,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		149C3184BC02BE73C955AB3F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyCarVersionTwo/Pods-MyCarVersionTwo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		167C4A555CCDA20FE507ABB6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -399,18 +437,20 @@
 				16653B2D20B0098500765363 /* cardViewDesign.swift in Sources */,
 				1621F03720BAA74200CC4C9B /* PopupVC.swift in Sources */,
 				7413387F20C03FF60095D8DA /* Oil.swift in Sources */,
-				745927DB20BC26620060D923 /* SideMenuHolderViewController.swift in Sources */,
 				7413386D20C0218C0095D8DA /* OilDAO.swift in Sources */,
 				7413388520C040200095D8DA /* Car.swift in Sources */,
 				16653B3620B0155800765363 /* CarTrackingCell.swift in Sources */,
 				16D5302F20B8637B00BCA4BD /* UserProfileController.swift in Sources */,
 				16653B3D20B169F700765363 /* CarTItemDetailsViewController.swift in Sources */,
+				743E1AC420C405CF00CFDF57 /* HomeViewController.swift in Sources */,
 				1650EE0420B4524000C830FA /* CardViewController.swift in Sources */,
 				1626142D20B7A4D4000E54F6 /* SingleCarDataVC.swift in Sources */,
 				7413388720C043810095D8DA /* CarWash.swift in Sources */,
 				7413386B20C0217C0095D8DA /* CarDAO.swift in Sources */,
 				162856B520B007FE009124CC /* MyCarVersionTwo.xcdatamodeld in Sources */,
 				7413388920C09DC60095D8DA /* UserDAO.swift in Sources */,
+				04B91B8320BECBD2003F60BB /* WebViewController.swift in Sources */,
+				0436B25F20BEAC17008D904B /* LoginViewController.swift in Sources */,
 				16A4A08320BB3CA500246A60 /* CarCardVC.swift in Sources */,
 				16653B4020B179BA00765363 /* CarListViewController.swift in Sources */,
 				16653B3420B0118500765363 /* CarTrackingViewController.swift in Sources */,

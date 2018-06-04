@@ -5,11 +5,11 @@ PODS:
   - Floaty (3.0.1)
   - MultilineTextField (0.2.2)
   - RAMPaperSwitch (2.1.0)
-  - Realm (3.5.0):
-    - Realm/Headers (= 3.5.0)
-  - Realm/Headers (3.5.0)
-  - RealmSwift (3.5.0):
-    - Realm (= 3.5.0)
+  - Realm (3.1.1):
+    - Realm/Headers (= 3.1.1)
+  - Realm/Headers (3.1.1)
+  - RealmSwift (3.1.1):
+    - Realm (= 3.1.1)
   - SimpleAlert (3.0.0)
   - TextFieldEffects (1.4.0)
   - UIDropDown (1.1.1)
@@ -26,20 +26,6 @@ DEPENDENCIES:
   - TextFieldEffects
   - UIDropDown
 
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - DropDown
-    - FaceAware
-    - FCAlertView
-    - Floaty
-    - MultilineTextField
-    - RAMPaperSwitch
-    - Realm
-    - RealmSwift
-    - SimpleAlert
-    - TextFieldEffects
-    - UIDropDown
-
 SPEC CHECKSUMS:
   DropDown: 20499c7b2731b0d21609af924e47c7677a2be50d
   FaceAware: 421436f9d16aacdb26ffcf8e5a39a1dd68630395
@@ -47,12 +33,12 @@ SPEC CHECKSUMS:
   Floaty: bb7a353deee9ddcc14c584ca9c538efdc19669f2
   MultilineTextField: 4fe1fbdd32b97c19712b2988f4ae2f73002821b9
   RAMPaperSwitch: ef08af0400a040c9850e09253280deb77510becb
-  Realm: 0378021c424e4e2bd6a0e63b27881e929d9b9ad1
-  RealmSwift: 3322562622fda2ad596985ead4d8d8be30cf838c
+  Realm: 42d1c38a5b1bbcc828b48a7ce702cb86fc68adf4
+  RealmSwift: d31937ca6a6ee54acde64ec839523c0a3c04924b
   SimpleAlert: 7265c3006749c680627545b61ac37d9ab1ab0be6
   TextFieldEffects: 4ee41b5216e674d55fb6ac25107bf1af7629176f
   UIDropDown: 22e6e3e22d419884c8f21d95ea9be36aac905ed4
 
-PODFILE CHECKSUM: 6f55921026a2edf90447723369e1c3d3fc3bfa0c
+PODFILE CHECKSUM: 849114f886addcff713e3f991e1c1cf0aad094cc
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.4.0
