@@ -28,8 +28,6 @@
 		16653B3D20B169F700765363 /* CarTItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16653B3C20B169F700765363 /* CarTItemDetailsViewController.swift */; };
 		16653B4020B179BA00765363 /* CarListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16653B3F20B179BA00765363 /* CarListViewController.swift */; };
 		168E90DC20B29E3F003CA24C /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 168E90DA20B29E3F003CA24C /* CardViewController.xib */; };
-		16A4A08120BB3C8F00246A60 /* CarCardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16A4A08020BB3C8F00246A60 /* CarCardVC.xib */; };
-		16A4A08320BB3CA500246A60 /* CarCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A4A08220BB3CA500246A60 /* CarCardVC.swift */; };
 		16D5302F20B8637B00BCA4BD /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5302E20B8637B00BCA4BD /* UserProfileController.swift */; };
 		7413386B20C0217C0095D8DA /* CarDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7413386A20C0217C0095D8DA /* CarDAO.swift */; };
 		7413386D20C0218C0095D8DA /* OilDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7413386C20C0218C0095D8DA /* OilDAO.swift */; };
@@ -69,8 +67,6 @@
 		16653B3C20B169F700765363 /* CarTItemDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTItemDetailsViewController.swift; sourceTree = "<group>"; };
 		16653B3F20B179BA00765363 /* CarListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewController.swift; sourceTree = "<group>"; };
 		168E90DA20B29E3F003CA24C /* CardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardViewController.xib; sourceTree = "<group>"; };
-		16A4A08020BB3C8F00246A60 /* CarCardVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarCardVC.xib; sourceTree = "<group>"; };
-		16A4A08220BB3CA500246A60 /* CarCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCardVC.swift; sourceTree = "<group>"; };
 		16D5302E20B8637B00BCA4BD /* UserProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
 		4E3C5372C003FD0AF90BF475 /* Pods-MyCarVersionTwo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCarVersionTwo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyCarVersionTwo/Pods-MyCarVersionTwo.release.xcconfig"; sourceTree = "<group>"; };
 		7413386A20C0217C0095D8DA /* CarDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDAO.swift; sourceTree = "<group>"; };
@@ -194,8 +190,6 @@
 			children = (
 				168E90DA20B29E3F003CA24C /* CardViewController.xib */,
 				1650EE0320B4524000C830FA /* CardViewController.swift */,
-				16A4A08020BB3C8F00246A60 /* CarCardVC.xib */,
-				16A4A08220BB3CA500246A60 /* CarCardVC.swift */,
 			);
 			path = NIB;
 			sourceTree = "<group>";
@@ -337,7 +331,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				162856BA20B007FE009124CC /* LaunchScreen.storyboard in Resources */,
-				16A4A08120BB3C8F00246A60 /* CarCardVC.xib in Resources */,
 				162856B720B007FE009124CC /* Assets.xcassets in Resources */,
 				1650EDFA20B42E9600C830FA /* OBD.storyboard in Resources */,
 				168E90DC20B29E3F003CA24C /* CardViewController.xib in Resources */,
@@ -451,7 +444,6 @@
 				7413388920C09DC60095D8DA /* UserDAO.swift in Sources */,
 				04B91B8320BECBD2003F60BB /* WebViewController.swift in Sources */,
 				0436B25F20BEAC17008D904B /* LoginViewController.swift in Sources */,
-				16A4A08320BB3CA500246A60 /* CarCardVC.swift in Sources */,
 				16653B4020B179BA00765363 /* CarListViewController.swift in Sources */,
 				16653B3420B0118500765363 /* CarTrackingViewController.swift in Sources */,
 				7413386F20C021DC0095D8DA /* RefuelDAO.swift in Sources */,
